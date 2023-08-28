@@ -14,7 +14,7 @@ class DataModel(BaseModel):
     chart_type: ChartEnum
     customer_id: str
     customer_name: str
-    days_overdue: int 
+    days_overdue: int | None = None
     amount_overstanding: float
-    recover: float 
-    date_created: str 
+    recover: float | None = None
+    date_created: str | None = None
